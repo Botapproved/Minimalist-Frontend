@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Clash-Regular";
+    src: url("./assets/font/ClashDisplay-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "Clash-Medium";
+    src: url("./assets/font/ClashDisplay-Medium.otf");
+  }
+  @font-face {
+    font-family: "Clash-Semibold";
+    src: url("./assets/font/ClashDisplay-Semibold.otf");}
+
+a.active hr{
+    display:block;
+}
+
+html{
+    background-color: #F3F1ED;
+}
