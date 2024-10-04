@@ -9,6 +9,8 @@ import PlaceOrder from './pages/PlaceOrder'
 import Product from './pages/Product'
 import Navbar from './components/Navbar'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
+import Register from './pages/Register'
 
 
 const App = () => {
@@ -25,8 +27,10 @@ const App = () => {
         <Route path='/placeorder' element={<PlaceOrder/>}/>
         <Route path='/product/:productId' element={<Product/>} />
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/register' element={<Register/>}/>
 
       </Routes>
+      <Footer/>
 
 
     </div>

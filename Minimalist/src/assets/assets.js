@@ -19,6 +19,9 @@ import Product5 from "./p5.png"
 import Product6 from "./p6.png"
 import Product7 from "./p7.png"
 import Product8 from "./p8.png"
+import Close from "./close.png"
+import Plant from "./plant.png"
+import NightStand from "./nightStand.png"
 
 export const assets = {
     logo,
@@ -41,5 +44,8 @@ export const assets = {
     Product5,
     Product6,
     Product7,
-    Product8
+    Product8,
+    Plant,
+    NightStand,
+    Close
 }
