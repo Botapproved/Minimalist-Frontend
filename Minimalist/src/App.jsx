@@ -15,6 +15,7 @@ import SittingRoom from './pages/SittingRoom'
 import Kitchen from './pages/Kitchen'
 import Accessories from './pages/Accessories'
 import Checkout from './pages/Checkout'
+import Payment from './pages/Payment'
 
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/orders' element={<Orders/>}/>
-        <Route path='/placeorder' element={<PlaceOrder/>}/>
+        <Route path='/orderplaced' element={<PlaceOrder/>}/>
         <Route path='/product/:productId' element={<Product/>} />
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/register' element={<Register/>}/>
@@ -36,6 +37,7 @@ const App = () => {
         <Route path='/accessories' element={<Accessories/>}/>
         <Route path='/kitchen' element={<Kitchen/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/payment' element={<Payment/>}/>
 
       </Routes>
       <Footer/>

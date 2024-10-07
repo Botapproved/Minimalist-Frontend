@@ -22,6 +22,7 @@ import Product8 from "./p8.png"
 import Close from "./close.png"
 import Plant from "./plant.png"
 import NightStand from "./nightStand.png"
+import OrderPlaced from "./OrderPlaced.png"
 
 export const assets = {
     logo,
@@ -47,7 +48,8 @@ export const assets = {
     Product8,
     Plant,
     NightStand,
-    Close
+    Close,
+    OrderPlaced
 }
 
 export const products = [

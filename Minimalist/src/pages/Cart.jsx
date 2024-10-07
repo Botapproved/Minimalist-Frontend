@@ -33,8 +33,8 @@ const Cart = () => {
         price="$369.00"
       />
     </div>
-    <div className="mt-8">
-    <Button text="Proceed to payment" />
+    <div className="mt-8" onClick={() => navigate('/checkout')}>
+        <Button text="Proceed to payment" />
       </div>
   </div>
 );
