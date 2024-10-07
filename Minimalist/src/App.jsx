@@ -11,6 +11,10 @@ import Navbar from './components/Navbar'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Register from './pages/Register'
+import SittingRoom from './pages/SittingRoom'
+import Kitchen from './pages/Kitchen'
+import Accessories from './pages/Accessories'
+import Checkout from './pages/Checkout'
 
 
 const App = () => {
@@ -28,6 +32,10 @@ const App = () => {
         <Route path='/product/:productId' element={<Product/>} />
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/sittingroom' element={<SittingRoom/>}/>
+        <Route path='/accessories' element={<Accessories/>}/>
+        <Route path='/kitchen' element={<Kitchen/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
 
       </Routes>
       <Footer/>

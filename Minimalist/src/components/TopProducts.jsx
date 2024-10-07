@@ -1,19 +1,21 @@
-import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ChevronDown} from 'lucide-react';
 import { assets } from '../assets/assets';
+import { useContext } from 'react';
+import { ShopContext } from '../context/ShopContext'
+import { Link } from 'react-router-dom';
 
-const products = [
-  { id: 1, name: 'Round Terra Marble Table', price: 34, image: assets.Product1 },
-  { id: 2, name: 'Ceramic Rustic Vase', price: 11, image: assets.Product2 },
-  { id: 3, name: 'Metro Luxe Duo Sofa', price: 120, image: assets.Product3 },
-  { id: 4, name: 'Kitchen Bar Stool', price: 19, image: assets.Product4 },
-  { id: 5, name: 'Luxe Modern Armchair', price: 60, image: assets.Product5 },
-  { id: 6, name: 'Round Fluted Accent Table', price: 90, image: assets.Product6 },
-  { id: 7, name: 'Round Terra Marble Side Table', price: 11, image: assets.Product7 },
-  { id: 8, name: 'Luna Modern Round Ottoman', price: 14, image: assets.Product8 },
-];
+
 
 const TopProducts = () => {
+  const {products, currency} = useContext(ShopContext);
+  const [bestSeller,setbestSeller] = useState([])
+  useEffect(()=>{
+    const topProduct = products.filter((item) => (item.bestseller));
+    setbestSeller(topProduct)
+  },[])
+
+  console.log(products)
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
@@ -31,7 +33,8 @@ const TopProducts = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {products.map((product) => (
+        {bestSeller.map((product) => (
+          <Link className='cursor-pointer' to={`/product/${product.id}`}>
           <div key={product.id} className="space-y-2">
             <img
               src={product.image}
@@ -41,18 +44,20 @@ const TopProducts = () => {
             <div className="flex justify-between items-center">
               <h2 className="text-sm font-medium truncate flex-grow">{product.name}</h2>
               <span className="text-sm font-medium rounded-lg bg-white px-2 py-1 ml-2">
-                ${product.price}
+                {currency}{product.price}
               </span>
             </div>
           </div>
+          </Link>
         ))}
       </div>
       <div className="mt-8 text-center">
         {/* <p className="mb-4">Showing 20 of 48 results</p> */}
-        <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">
+        <Link to='/collection'><button className="border border-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">
           Show more <span className="ml-1">&gt;</span>
          
-        </button>
+        </button></Link>
+        
       </div>
     </div>
   );

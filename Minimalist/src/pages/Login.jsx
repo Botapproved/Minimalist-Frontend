@@ -1,14 +1,17 @@
 import React from 'react';
 import SocialLogin from '../components/SocialLogin';
 import { assets } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
+    
     <>
     <div className="flex overflow-hidden flex-col items-center px-8 py-10 mx-auto w-full  max-w-[1430px] max-md:px-5 max-md:max-w-full">
     <div className="flex flex-wrap items-center self-stretch w-full max-md:max-w-full">
       <div className="flex gap-2.5 justify-center items-center self-stretch px-2.5 my-auto w-11 h-11 bg-slate-50 rounded-[300px]">
-        <img loading="lazy" src={assets.Close} alt="" className="object-contain self-stretch my-auto w-6 aspect-square" />
+        <img loading="lazy" src={assets.Close} alt="" className="object-contain cursor-pointer self-stretch my-auto w-6 aspect-square" onClick={() => navigate(-1)} />
       </div>
       
     </div>

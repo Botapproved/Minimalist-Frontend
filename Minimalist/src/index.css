@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 @font-face {
     font-family: "Clash-Regular";
     src: url("./assets/font/ClashDisplay-Regular.otf");
@@ -15,6 +16,12 @@
   @font-face {
     font-family: "Clash-Semibold";
     src: url("./assets/font/ClashDisplay-Semibold.otf");}
+    @font-face {
+      font-family: "Open-Sans";
+      src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    }
+
+  
 
 a.active hr{
     display:block;
@@ -22,4 +29,11 @@ a.active hr{
 
 html{
     background-color: #F3F1ED;
+}
+
+@media(max-width:640px){
+  a.active{
+    background-color: black;
+    color: wheat;
+  }
 }
