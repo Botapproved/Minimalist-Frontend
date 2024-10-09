@@ -48,16 +48,13 @@ const Register = () =>{
               />
               </div>
           </div>
-          <a href="#" className="mt-6 font-semibold text-center">Forgot password?</a>
+        
           <button type="submit" className="gap-5 self-stretch px-5 py-5 mt-6 w-full font-semibold text-center text-white whitespace-nowrap bg-zinc-500 min-h-[56px] rounded-[300px]">
             Login
           </button>
         </form>
             <SocialLogin />
-            <div className="self-center mt-8 text-center text-zinc-500">
-          <span className="text-gray-500">First time here?</span>{" "}
-          <a href="#" className="font-semibold text-zinc-500">Create an account</a>
-        </div>
+           
           </section>
         </div>
     

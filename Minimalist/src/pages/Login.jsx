@@ -54,7 +54,7 @@ const Login = () => {
         <SocialLogin />
         <div className="self-center mt-8 text-center text-zinc-500">
       <span className="text-gray-500">First time here?</span>{" "}
-      <a href="#" className="font-semibold text-zinc-500">Create an account</a>
+      <a href="/register" className="font-semibold text-zinc-500">Create an account</a>
     </div>
       </section>
     </div>
