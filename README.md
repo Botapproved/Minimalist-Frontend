@@ -34,7 +34,7 @@ Welcome to the Minimalist Furniture E-Commerce project! This application is desi
 
 The design for this project was created using Figma. You can access the design file here:
 
-[Figma Design File]([link_to_your_figma_file](https://www.figma.com/proto/WJWtAlkgqVaM0eYS5E10N9/Minimalist-Ecommerce-Project?node-id=3-79&t=YtqCKOHxDjraRfHW-1)) <!-- Replace with your Figma link -->
+[Figma Design File](https://www.figma.com/proto/WJWtAlkgqVaM0eYS5E10N9/Minimalist-Ecommerce-Project?node-id=3-79&t=YtqCKOHxDjraRfHW-1) <!-- Replace with your Figma link -->
 
 ## Installation
 
