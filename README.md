@@ -2,7 +2,7 @@
 
 Welcome to the Minimalist Furniture E-Commerce project! This application is designed to showcase a collection of stylish and minimalistic furniture products, allowing users to browse, add items to their cart, and purchase them seamlessly.
 
-![Minimalist Furniture Banner](path_to_your_banner_image) <!-- Replace with your project image -->
+![Minimalist Furniture Banner](Minimalist/HomepageDesign.png) <!-- Replace with your project image -->
 
 ## Table of Contents
 
@@ -28,13 +28,13 @@ Welcome to the Minimalist Furniture E-Commerce project! This application is desi
   - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
   
 - **Backend:** 
-  - (If applicable, mention your backend tech stack)
+  - Node js using Molecular Framework
 
 ## Figma Design File
 
 The design for this project was created using Figma. You can access the design file here:
 
-[Figma Design File](link_to_your_figma_file) <!-- Replace with your Figma link -->
+[Figma Design File]([link_to_your_figma_file](https://www.figma.com/proto/WJWtAlkgqVaM0eYS5E10N9/Minimalist-Ecommerce-Project?node-id=3-79&t=YtqCKOHxDjraRfHW-1)) <!-- Replace with your Figma link -->
 
 ## Installation
 
